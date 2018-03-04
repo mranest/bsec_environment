@@ -18,8 +18,7 @@ git submodule init
 git submodule update
 ```
 
-2. Download and unzip [Bosch Sensortec Environmental Cluster (BSEC) Software]
-(https://www.bosch-sensortec.com/bst/products/all_products/bsec) distribution file.
+2. Download and unzip [Bosch Sensortec Environmental Cluster (BSEC) Software](https://www.bosch-sensortec.com/bst/products/all_products/bsec) distribution file.
 
 3. Edit `Makefile` to update:
     - Path where the BSEC distribution was unzipped
