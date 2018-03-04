@@ -18,9 +18,12 @@ git submodule init
 git submodule update
 ```
 
-2. Download and unzip [Bosch Sensortec Environmental Cluster (BSEC) Software](https://www.bosch-sensortec.com/bst/products/all_products/bsec) distribution file.
+2. Download and unzip [Bosch Sensortec Environmental Cluster (BSEC) Software](https://www.bosch-sensortec.com/bst/products/all_products/bsec)
+distribution file.
 
 3. Edit `Makefile` to update:
     - Path where the BSEC distribution was unzipped
-    - BSEC configuration to use (e.g. generic 3.3V, ULP mode polling, 4days background calibration)
-    - Library to use (PiThree or PiZero)
+    - BSEC configuration to use (e.g. `generic_33v_3s_4d` for 3.3V, LP mode polling,
+     4 days background calibration)
+    - Library to use; use the folder name under `algo/bin` folder of BSEC distribution for the
+    architecture of choice (e.g. `RaspberryPI/PiThree_ArmV8-a-64bits` for PiThree)
