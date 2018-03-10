@@ -251,7 +251,7 @@ uint32_t config_load(uint8_t *config_buffer, uint32_t n_buffer) {
 static void graceful_shutdown(int signo) {
     i2cClose();
 
-    fprintf(stderr, "Shuting down\n");
+    fprintf(stderr, "Shuting down BSEC environment\n");
 
     exit(99);
 }
